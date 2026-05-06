@@ -1,0 +1,2 @@
+ webapp/kotlin/gradle/libs.versions.toml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
