@@ -1,73 +1,167 @@
 diff --git a/diff-body.txt b/diff-body.txt
-index e81e5ed..e69de29 100644
+index 42ac6d3..e69de29 100644
 --- a/diff-body.txt
 +++ b/diff-body.txt
-@@ -1,46 +0,0 @@
+@@ -1,73 +0,0 @@
 -diff --git a/diff-body.txt b/diff-body.txt
--index 0186d2c..e69de29 100644
+-index e81e5ed..e69de29 100644
 ---- a/diff-body.txt
 -+++ b/diff-body.txt
--@@ -1,41 +0,0 @@
+-@@ -1,46 +0,0 @@
 --diff --git a/diff-body.txt b/diff-body.txt
---index 53dd493..e69de29 100644
+--index 0186d2c..e69de29 100644
 ----- a/diff-body.txt
 --+++ b/diff-body.txt
---@@ -1,36 +0,0 @@
+--@@ -1,41 +0,0 @@
 ---diff --git a/diff-body.txt b/diff-body.txt
----index 510dcf9..e69de29 100644
+---index 53dd493..e69de29 100644
 ------ a/diff-body.txt
 ---+++ b/diff-body.txt
----@@ -1,31 +0,0 @@
+---@@ -1,36 +0,0 @@
 ----diff --git a/diff-body.txt b/diff-body.txt
-----index b6e4056..e69de29 100644
+----index 510dcf9..e69de29 100644
 ------- a/diff-body.txt
 ----+++ b/diff-body.txt
-----@@ -1,26 +0,0 @@
+----@@ -1,31 +0,0 @@
 -----diff --git a/diff-body.txt b/diff-body.txt
------index 26e7163..e69de29 100644
+-----index b6e4056..e69de29 100644
 -------- a/diff-body.txt
 -----+++ b/diff-body.txt
------@@ -1,12 +0,0 @@
-------diff --git a/webapp/kotlin/gradle/libs.versions.toml b/webapp/kotlin/gradle/libs.versions.toml
-------index cd0897b..e747a49 100644
---------- a/webapp/kotlin/gradle/libs.versions.toml
-------+++ b/webapp/kotlin/gradle/libs.versions.toml
-------@@ -1,6 +1,6 @@
------- [versions]
------- kotlin = "2.3.20"
--------ktor = "3.4.1"
-------+ktor = "3.4.3"
------- logback = "1.5.21"
------- hikari-cp = "7.0.2"
------- mysql-connector = "9.7.0"
------diff --git a/diff-stat.txt b/diff-stat.txt
------index 9757ec6..8073905 100644
--------- a/diff-stat.txt
------+++ b/diff-stat.txt
------@@ -1,2 +1,2 @@
------- webapp/kotlin/gradle/libs.versions.toml | 2 +-
------- 1 file changed, 1 insertion(+), 1 deletion(-)
------+ diff-stat.txt | 2 --
------+ 1 file changed, 2 deletions(-)
+-----@@ -1,26 +0,0 @@
+------diff --git a/diff-body.txt b/diff-body.txt
+------index 26e7163..e69de29 100644
+--------- a/diff-body.txt
+------+++ b/diff-body.txt
+------@@ -1,12 +0,0 @@
+-------diff --git a/webapp/kotlin/gradle/libs.versions.toml b/webapp/kotlin/gradle/libs.versions.toml
+-------index cd0897b..e747a49 100644
+---------- a/webapp/kotlin/gradle/libs.versions.toml
+-------+++ b/webapp/kotlin/gradle/libs.versions.toml
+-------@@ -1,6 +1,6 @@
+------- [versions]
+------- kotlin = "2.3.20"
+--------ktor = "3.4.1"
+-------+ktor = "3.4.3"
+------- logback = "1.5.21"
+------- hikari-cp = "7.0.2"
+------- mysql-connector = "9.7.0"
+------diff --git a/diff-stat.txt b/diff-stat.txt
+------index 9757ec6..8073905 100644
+--------- a/diff-stat.txt
+------+++ b/diff-stat.txt
+------@@ -1,2 +1,2 @@
+------- webapp/kotlin/gradle/libs.versions.toml | 2 +-
+------- 1 file changed, 1 insertion(+), 1 deletion(-)
+------+ diff-stat.txt | 2 --
+------+ 1 file changed, 2 deletions(-)
+-diff --git a/diff-stat.txt b/diff-stat.txt
+-index 8073905..a2f2be6 100644
+---- a/diff-stat.txt
+-+++ b/diff-stat.txt
+-@@ -1,2 +1,3 @@
+-- diff-stat.txt | 2 --
+-- 1 file changed, 2 deletions(-)
+-+ diff-stat.txt                            | 2 --
+-+ webapp/kotlin/src/main/kotlin/Routing.kt | 2 +-
+-+ 2 files changed, 1 insertion(+), 3 deletions(-)
+-diff --git a/webapp/kotlin/src/main/kotlin/Routing.kt b/webapp/kotlin/src/main/kotlin/Routing.kt
+-index 3877a7b..fb8d676 100644
+---- a/webapp/kotlin/src/main/kotlin/Routing.kt
+-+++ b/webapp/kotlin/src/main/kotlin/Routing.kt
+-@@ -762,6 +762,6 @@ fun Application.configureRouting() {
+-         post("/admin/banned") { postAdminBanned() }
+-         get(Regex("""/@(?<accountName>[0-9a-zA-Z_]+)""")) { getAccountName() }
+- 
+--        staticFiles("/", File("/home/public"))
+-+        staticFiles("/", File("../public"))
+-     }
+- }
 diff --git a/diff-stat.txt b/diff-stat.txt
-index 8073905..a2f2be6 100644
+index a2f2be6..614412f 100644
 --- a/diff-stat.txt
 +++ b/diff-stat.txt
-@@ -1,2 +1,3 @@
-- diff-stat.txt | 2 --
-- 1 file changed, 2 deletions(-)
-+ diff-stat.txt                            | 2 --
-+ webapp/kotlin/src/main/kotlin/Routing.kt | 2 +-
-+ 2 files changed, 1 insertion(+), 3 deletions(-)
-diff --git a/webapp/kotlin/src/main/kotlin/Routing.kt b/webapp/kotlin/src/main/kotlin/Routing.kt
-index 3877a7b..fb8d676 100644
---- a/webapp/kotlin/src/main/kotlin/Routing.kt
-+++ b/webapp/kotlin/src/main/kotlin/Routing.kt
-@@ -762,6 +762,6 @@ fun Application.configureRouting() {
-         post("/admin/banned") { postAdminBanned() }
-         get(Regex("""/@(?<accountName>[0-9a-zA-Z_]+)""")) { getAccountName() }
+@@ -1,3 +1,4 @@
+- diff-stat.txt                            | 2 --
+- webapp/kotlin/src/main/kotlin/Routing.kt | 2 +-
+- 2 files changed, 1 insertion(+), 3 deletions(-)
++ diff-stat.txt            |  3 ---
++ webapp/kotlin/.gitignore |  2 ++
++ webapp/kotlin/README.md  | 33 +++++++++++++++++++++++----------
++ 3 files changed, 25 insertions(+), 13 deletions(-)
+diff --git a/webapp/kotlin/.gitignore b/webapp/kotlin/.gitignore
+index 0553aa5..29af760 100644
+--- a/webapp/kotlin/.gitignore
++++ b/webapp/kotlin/.gitignore
+@@ -37,3 +37,5 @@ Thumbs.db
  
--        staticFiles("/", File("/home/public"))
-+        staticFiles("/", File("../public"))
-     }
- }
+ # Bench seed (fetched at runtime via curl from upstream releases)
+ sql/dump.sql.bz2
++
++provisioning/hosts
+diff --git a/webapp/kotlin/README.md b/webapp/kotlin/README.md
+index 1e00ad6..3276df3 100644
+--- a/webapp/kotlin/README.md
++++ b/webapp/kotlin/README.md
+@@ -11,32 +11,32 @@ Ktor + JDBI + FreeMarker で、Go リファレンス実装（`webapp/golang/app.
+ ## このリポジトリについて
+ 
+ このリポジトリ `Msksgm/private-isu-kotlin` が **真の master** です。
+-upstream フォーク [Msksgm/private-isu](https://github.com/Msksgm/private-isu/tree/kotlin-impl) の `kotlin-impl` ブランチは、本リポジトリ `main` への push をトリガに `.github/workflows/sync-to-fork.yml` で `webapp/kotlin/` 配下へ自動同期される **読み取り専用ミラー** です。
++upstream フォーク [Msksgm/private-isu](https://github.com/Msksgm/private-isu/tree/kotlin-impl) の `kotlin-impl` ブランチは、本リポジトリ `main` への push をトリガに `.github/workflows/sync-to-fork.yml` で `webapp/kotlin/` 配下へ自動同期される **読み取り専用ミラー** です。`kotlin-impl` を `master` へマージすることは想定していません。
+ 
+ - 編集はすべて本リポジトリ (`Msksgm/private-isu-kotlin`) で行ってください。
+ - `Msksgm/private-isu` の `kotlin-impl` ブランチの `webapp/kotlin/` 配下に直接 commit しても、次回 sync で **上書きされます**。
+ - `webapp/public/`, `webapp/golang/`, `webapp/etc/` 等、`webapp/kotlin/` 以外は同期対象外で無傷です。
+ 
+-`Msksgm/private-isu` を clone して `git switch kotlin-impl` するだけで Kotlin 実装を試せます。
++## ローカルでの動作確認
+ 
+-## Using
++本家 `catatsuy/private-isu` を clone し、その `webapp/` 配下に本リポジトリを `kotlin/` として追加する形で動作確認します。
+ 
+-Kotlin で起動するためには以下の手順が必要です。
+-
+-1. private-isu の [README.md](https://github.com/catatsuy/private-isu/blob/master/README.md#docker-compose) に従って、MySQL に初期データを import する。
+-2. private-isu の `webapp` に本リポジトリを追加する。
++1. `catatsuy/private-isu` を clone する。
++    ```sh
++    git clone https://github.com/catatsuy/private-isu.git
++    cd private-isu
++    ```
++2. `webapp/` 配下に本リポジトリを `kotlin/` として clone する。
+     ```sh
+     cd webapp
+     git clone https://github.com/Msksgm/private-isu-kotlin.git kotlin
+     ```
+-    > **NOTE:** [Msksgm/private-isu](https://github.com/Msksgm/private-isu/tree/kotlin-impl) を clone して `git switch kotlin-impl` する場合、本手順は不要です（`webapp/kotlin/` に同期済み）。
+ 3. `webapp/docker-compose.yml` の `app.build` を `kotlin` に変更する。
+ 4. 起動する。
+     ```sh
+-    cd webapp
+     docker compose up
+     ```
+-5. (Option) ローカルで起動する場合は以下を実行する。MySQL と Memcached への接続先は環境変数で渡す（カッコ内はデフォルト値）。
++5. (Option) Gradle で直接起動する場合は、MySQL と Memcached を別途用意したうえで以下を実行する（カッコ内はデフォルト値）。
+     ```sh
+     export ISUCONP_DB_HOST=localhost   # default: localhost
+     export ISUCONP_DB_PORT=3306        # default: 3306
+@@ -53,6 +53,19 @@ Kotlin で起動するためには以下の手順が必要です。
+     2024-12-04 14:32:45.682 [main] INFO  Application - Responding at http://0.0.0.0:8080
+     ```
+ 
++## EC2 での動作確認
++
++`catatsuy/private-isu` が提供する AMI から EC2 インスタンスを起動し、本リポジトリの Ansible playbook でデプロイします。詳細な手順は [`provisioning/README.md`](provisioning/README.md) を参照してください。
++
++```sh
++# hosts.tmpl から hosts を作成し、PUBLIC_IP と鍵パスを書き換える
++cp provisioning/hosts{.tmpl,}
++# $EDITOR provisioning/hosts
++
++# playbook を実行する
++ansible-playbook -i provisioning/hosts provisioning/image/ansible/playbooks.yml
++```
++
+ ## Bench
+ 
+ ローカルで benchmarker を走らせる手順です。CI（`.github/workflows/bench.yml`）と同等のフローを手元で再現できます。
